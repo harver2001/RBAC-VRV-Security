@@ -1,6 +1,6 @@
 # User Management Role-Based Access Control (RBAC) System
 
-This project is a simple **User Management System** built with **React-JS**. It allows you to manage users in a table format, with the ability to add, edit, and delete users. Each user has a **name**, **email**, **role**, and **status (active/inactive)**. The app stores user data in **localStorage**, so your data persists even after a page refresh.
+This project is a simple **User Management System** built with **React-JS**. It allows you to manage users and roles in a table format, with the ability to add, edit, and delete users and roles. Each user has a **name**, **email**, **role**, and **status (active/inactive)**. The app stores user data in **localStorage**, so your data persists even after a page refresh.
 
 
 ## Features
@@ -45,7 +45,7 @@ This project is a simple **User Management System** built with **React-JS**. It 
 - Adding Users: Click on the designated "Add User" button to add a new user.
 - Editing Users: Locate the "Edit" button next to a user's record in the table and click it to modify details, including their role.
 - Deleting Users: Click the corresponding "Delete" button to permanently remove a user.
-- Role Management: When adding or editing a user, you can assign a specific role (e.g., "Admin" or "User"). This helps to control the access and permissions for each user.
+- Role Management: When adding or editing a user, you can assign a specific role. This helps to control the access and permissions for each user.
 - LocalStorage Utilization: The application leverages the browser's localStorage for user data persistence. This entails:
-    - Saving user data modifications (addition, editing, deletion) locally to your browser.
-    - Maintaining user data even upon page refreshes, as it's retrieved from localStorage upon subsequent loads.
+    - Saving user and role data modifications (addition, editing, deletion) locally to your browser.
+    - Maintaining user and role data even upon page refreshes, as it's retrieved from localStorage upon subsequent loads.
