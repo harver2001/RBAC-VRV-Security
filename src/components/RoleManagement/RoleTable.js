@@ -33,7 +33,7 @@ function RoleTable() {
       setRoles((prev) => [...prev, { ...role, id: Date.now() }]);
     }
     setShowForm(false);
-    setError(""); // Clear error on successful save
+    setError(""); 
   };
 
   // Handle Delete Role
@@ -49,7 +49,7 @@ function RoleTable() {
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-2xl font-bold text-gray-700">Role Management</h2>
           <button
-            className="bg-blue-500 text-white font-semibold px-5 py-2 rounded-full shadow-lg hover:bg-blue-600 transition duration-300"
+            className="bg-green-500 text-white font-semibold px-5 py-2 rounded-full shadow-lg hover:bg-green-600 transition duration-300"
             onClick={() => setShowForm(true)}
           >
             {editingRole ? "Edit Role" : "Add Role"}
@@ -146,7 +146,7 @@ function RoleForm({ onClose, onSave, role, error }) {
     }
 
     onSave({ name, permissions });
-    setFormError(""); // Clear form-specific error on successful submit
+    setFormError(""); 
   };
 
   return (
